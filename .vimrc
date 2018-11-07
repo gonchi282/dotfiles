@@ -63,3 +63,6 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+"BackSpaceで海峡を削除できるようにする
+set backspace=2
