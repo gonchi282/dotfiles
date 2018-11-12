@@ -64,5 +64,8 @@ set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
-"BackSpaceで海峡を削除できるようにする
+"BackSpaceで改行を削除できるようにする
 set backspace=2
+
+"色を付ける
+:syntax on
