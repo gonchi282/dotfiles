@@ -115,5 +115,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# change directory to home
-cd
