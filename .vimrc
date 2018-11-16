@@ -74,3 +74,4 @@ set backspace=2
 highlight Comment ctermfg=cyan 
 highlight Constant ctermfg=red 
 highlight PreProc ctermfg=magenta
+highlight Special ctermfg=magenta
