@@ -69,3 +69,6 @@ set backspace=2
 
 "文字に色を付ける
 :syntax on
+
+highlight Comment ctermfg=Green
+highlight Constant ctermfg=Yellow
