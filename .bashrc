@@ -79,6 +79,9 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
+    alias ll='ls -l'
+    alias la='ls -a'
+    alias make='make -j5'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -115,3 +118,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# shared library path
+export LD_LIBRARY_PATH=/home/kouki/.usr/lib
+# add path ~/.usr/bin
+PATH=$PATH:/home/kouki/.usr/bin:/usr/lib/chromium-browser
+
+# ccache settings
+export USE_CCACHE=1
+export CCACHE_DIR=$HOME/.ccache
+export CC='ccache gcc'
+export CXX='ccache g++'
