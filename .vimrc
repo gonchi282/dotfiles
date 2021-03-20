@@ -67,6 +67,9 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 "BackSpaceで海峡を削除できるようにする
 set backspace=2
 
+" クリップボード有効化
+set clipboard=unnamedplus
+
 "文字に色を付ける
 :syntax on
 
